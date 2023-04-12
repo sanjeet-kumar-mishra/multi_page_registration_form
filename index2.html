@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Page Registration</title>
+    <link href="index2.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        <form id="form" action="">
+            <p>HSC Institution name<span class="redstar">*</span><span class="errorspan" id="hscinstError"></span></p>
+            <input type="text" class="fullsize" name="hscinst" id="hscinst" placeholder="HSC Institution name" maxlength="50" required>
+
+            <p>HSC Board<span class="redstar">*</span></p>
+            <select class="fullsize" name="hscboard" id="hscboard" required>
+                <option value="">Select</option>
+                <option value="CBSC">CBSC</option>
+                <option value="ICSC">ICSC</option>
+                <option value="State Board">State Board</option>
+            </select>
+
+            <p>Score in HSC in percentage<span class="redstar">*</span><span class="errorspan" id="hscError"></span></p>
+            <input class="fullsize" type="number" name="hscpercent" id="hscpercent" placeholder="##" required>
+
+            <p>SSC Institution name<span class="redstar">*</span><span class="errorspan" id="sscinstError"></span></p>
+            <input type="text" class="fullsize" name="sscinst" id="sscinst" placeholder="SSC Institution name" maxlength="50" required>
+
+            <p>SSC Board<span class="redstar">*</span></p>
+            <select class="fullsize" name="sscboard" id="sscboard" required>
+                <option value="">Select</option>
+                <option value="CBSC">CBSC</option>
+                <option value="ICSC">ICSC</option>
+                <option value="State Board">State Board</option>
+            </select>
+
+            <p>Score in SSC in percentage<span class="redstar">*</span><span class="errorspan" id="sscError"></span></p>
+            <input class="fullsize" type="number" name="sscpercent" id="sscpercent" placeholder="##" required>
+
+            <p>Currently pursuing<span class="redstar">*</span><span class="errorspan" id="currentError"></span></p>
+            <input type="text" class="fullsize" name="currentedu" id="currentedu" placeholder="Current Education" maxlength="50" required>
+            
+            <p>Current educational institution name<span class="redstar">*</span><span class="errorspan" id="currentinstError"></span></p>
+            <input type="text" class="fullsize" name="currentinst" id="currentinst" placeholder="Current Institute" maxlength="50" required>
+
+            <p>Overall percentage<span class="redstar">*</span><span class="errorspan" id="overallError"></span></p>
+            <input type="number" class="fullsize" name="currentpercent" id="currentpercent" maxlength="100" placeholder="Overall Percentage" required>
+
+           
+            <div class="form-check">
+                <input type="checkbox" id="backlog" name="backlog" value="yes"/>
+                <label for="backlog">Current backlogs if any</label>
+            </div>
+
+            <div class="submitdiv">
+                <a href="index4.html"><button class="page1button" id="page1button" type="button">Preview</button></a>
+                <a href="index.html"><button type="button" class="buttonprev" id="buttonprev">Prev Page</button></a>
+                <button class="button" id="button" type="submit">Submit</button>
+                <a href="index3.html"><button type="button" class="buttonprev" id="nextbutton">Next Page</button></a>
+            </div>
+        </form>
+    </div>
+
+    <script src="index2.js"></script>
+</body>
+</html>

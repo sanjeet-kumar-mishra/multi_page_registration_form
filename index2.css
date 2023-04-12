@@ -1,0 +1,142 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background-color: rgb(215, 250, 245);
+}
+h1 {
+    margin: 15px 20px;
+    text-align: center;
+}
+
+.form-container {
+    margin: 30px 100px;
+    background-color: rgb(197, 246, 255);
+    padding: 10px;
+}
+
+p {
+    font-weight: 600;
+    margin: 10px 0px 5px 0px;
+}
+.redstar {
+    color: rgb(255, 0, 0);
+}
+
+input {
+    height: 30px;
+    border: 1px solid rgb(255, 174, 107);
+    border-radius: 3px;
+    margin: 0px 10px 5px 0px;
+    padding: 2px;
+}
+
+.halfsize {
+    width: 48%;
+}
+
+.fullsize {
+    width: 97.5%;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+select {
+    height: 35px;
+    border: 1px solid rgb(255, 174, 107);
+    border-radius: 3px;
+    margin: 0px 10px 5px 3px;
+    padding: 2px;
+}
+.submitdiv {
+    text-align: right;
+}
+.button {
+    border: 1px solid white;
+    padding: 10px 15px;
+    font-weight: 600;
+    margin: 10px 20px;
+    background-color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttonprev {
+    border: 1px solid white;
+    padding: 10px 15px;
+    font-weight: 600;
+    margin: 10px 20px;
+    background-color: rgb(86, 154, 255);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.page1button {
+    border: 1px solid white;
+    padding: 10px 15px;
+    font-weight: 600;
+    margin: 10px 20px;
+    background-color: rgb(199, 255, 45);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.errorspan {
+    color: rgb(255, 59, 59);
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .halfsize {
+        width: 47%;
+    }
+    
+    .fullsize {
+        width: 96%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .halfsize {
+        width: 46%;
+    }
+    
+    .fullsize {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .halfsize {
+        width: 100%;
+    }
+    
+    .fullsize {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .halfsize {
+        width: 100%;
+    }
+    
+    .fullsize {
+        width: 100%;
+    }
+    .form-container {
+        margin: 10px 20px;
+        background-color: rgb(197, 246, 255);
+        padding: 10px;
+    }
+    h1 {
+        font-size:large;
+    }
+    p {
+        font-size: small;
+    }
+    button {
+        width: 100%;
+        margin: 5px 0px !important;
+    }
+}

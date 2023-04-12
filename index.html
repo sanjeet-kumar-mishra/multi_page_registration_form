@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Page Registration</title>
+    <link href="index.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        <form id="form" action="">
+            <p>Name<span class="redstar">*</span><span class="errorspan" id="nameError"></span></p>
+            <input type="text" class="halfsize" name="firstname" id="firstname" maxlength="50" placeholder="First" required>
+            <input type="text" class="halfsize" name="lastname" id="lastname" maxlength="50" placeholder="Last" required>
+
+            <p>Date of Birth<span class="redstar">*</span><span class="errorspan" id="birthdateError"></span></p>
+            <input type="date" class="fullsize" name="birthdate" id="birthdate" required>
+
+            <p>Email<span class="redstar">*</span></p>
+            <input type="email" class="fullsize" name="email" id="email" maxlength="70" required>
+
+            <p>Father's Name<span class="redstar">*</span></span><span class="errorspan" id="fnameError"></span></p>
+            <input type="text" class="halfsize" name="ffname" id="ffname" placeholder="First" maxlength="50" required>
+            <input type="text" class="halfsize" name="flname" id="flname" placeholder="Last" maxlength="50" required>
+
+            <p>Mother's Name<span class="redstar">*</span></span><span class="errorspan" id="mnameError"></span></p>
+            <input type="text" class="halfsize" name="mfname" id="mfname" placeholder="First" maxlength="50" required>
+            <input type="text" class="halfsize" name="mlname" id="mlname" placeholder="Last" maxlength="50"  required>
+
+            <p>Gender<span class="redstar">*</span></p>
+            <div class="form-check">
+                <input type="radio" id="male" name="gender" value="Male" checked />
+                <label for="male">M</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="female" name="gender" value="Female" />
+                <label for="female">F</label>
+            </div>
+
+            <p>Nationality<span class="redstar">*</span><span class="errorspan" id="nationalnameError"></span></p>
+            <input class="fullsize" type="text" name="nationality" id="nationality" maxlength="30" required>
+
+            <p>Home Address<span class="redstar">*</span><span class="errorspan" id="cityError"></span></p>
+            <input class="fullsize" type="text" name="homeaddress" id="homeaddress" placeholder="Street Address" maxlength="50" required>
+            <input type="text" class="halfsize" name="city" id="city" placeholder="City" maxlength="30" required>
+            <select class="halfsize" name="country" id="country" required>
+                <option value="">Country</option>
+                <option value="China">China</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Iran">Iran</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Myanmar">Myanmar</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Iraq">Iraq</option>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Nepal">Nepal</option>
+            </select>
+
+            <p>Telephone - Home<span class="errorspan" id="telephoneError"></span></p>
+            <input type="number" class="fullsize" name="telephone" id="telephone" placeholder="### ### ####">
+
+            <p>Telephone - Mobile<span class="redstar">*</span><span class="errorspan" id="mobileError"></span></p>
+            <input type="number" class="fullsize" name="mobile" id="mobile" placeholder="### ### ####" required>
+
+            <div class="submitdiv">
+                <a href="index4.html"><button class="page1button" id="page1button" type="button">Preview</button></a>
+                <button class="button" id="button" type="submit">Submit</button>
+                <a href="index2.html"><button class="nextbutton" id="nextbutton" type="button">Next Page</button></a>
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

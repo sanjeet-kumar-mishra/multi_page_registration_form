@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Page Registration</title>
+    <link href="index3.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+        <form id="form" action="">
+            <p title="Image size less than 4MB">Recent passport size photograph<span class="redstar">*</span><span class="errorspan" id="imageError"></span></p>
+            <input type="file" accept="image/*" onChange="validateFileSize(this, imageError)" class="fullsize" name="photo" id="photo" required>
+
+            <p>HSC mark sheet<span class="redstar">*</span><span class="errorspan" id="hscError"></span></p>
+            <input type="file" accept="image/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" onChange="validateFileSize(this, hscError)" class="fullsize" name="hscmarksheet" id="hscmarksheet" required>
+
+            <p>SSC mark sheet<span class="redstar">*</span><span class="errorspan" id="sscError"></span></p>
+            <input type="file" accept="image/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" onChange="validateFileSize(this, sscError)" class="fullsize" name="sscmarksheet" id="sscmarksheet" required>
+
+            <p>All semesters mark sheet in a single PDF or docs<span class="redstar">*</span><span class="errorspan" id="allsemesterError"></span></p>
+            <input type="file" accept="image/*,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" onChange="validateFileSize(this, allsemesterError)" class="fullsize" name="allsemester" id="allsemester" required>
+
+            <div class="submitdiv">
+                <a href="index4.html"><button class="page1button" id="page1button" type="button">Preview</button></a>
+                <a href="index2.html"><button type="button" class="buttonprev" id="buttonprev">Prev Page</button></a>
+                <button class="button" id="button" type="submit" onclick="uploadFile()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="index3.js"></script>
+</body>
+</html>
